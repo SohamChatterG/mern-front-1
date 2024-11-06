@@ -12,7 +12,7 @@ export const SendMoney = () => {
     const navigate = useNavigate();
     const handleTransfer = async () => {
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/account/transfer", {
+            const response = await axios.post("https://mern-back-1-1.onrender.com/api/v1/account/transfer", {
                 to: id,
                 amount: parseFloat(amount)
             }, {
