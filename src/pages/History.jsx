@@ -26,7 +26,7 @@ const History = () => {
 
   return (
     <div>
-      <Appbar page="Dashboard" onClick={() => navigate('/dashboard')} />
+      <Appbar page="Dashboard" onClick={() => navigate('/')} />
       <div className="m-8">
         <div className="font-bold mt-6 text-lg">Transactions</div>
         
