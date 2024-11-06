@@ -20,7 +20,7 @@ export const Signup = () => {
 
     const handleSignUp = async () => {
         try {
-            await axios.post("http://localhost:3000/api/v1/user/signup", { username, firstName, lastName, password });
+            await axios.post("https://mern-back-1-1.onrender.com/api/v1/user/signup", { username, firstName, lastName, password });
             setError(false)
             navigate("/signin");
         } catch (err) {

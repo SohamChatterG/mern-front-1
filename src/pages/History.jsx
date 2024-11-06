@@ -10,7 +10,7 @@ const History = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/v1/user/history', {
+        const response = await axios.get('https://mern-back-1-1.onrender.com/api/v1/user/history', {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token')
           }

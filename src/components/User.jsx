@@ -11,7 +11,7 @@ export const Users = () => {
     const { name, setName } = useContext(MyContext);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
+        axios.get("https://mern-back-1-1.onrender.com/api/v1/user/bulk?filter=" + filter)
             .then(response => {
                 // Retrieve first and last name from MyContext
                 const [firstName, lastName] = name.split(" "); // Assuming name is in "First Last" format

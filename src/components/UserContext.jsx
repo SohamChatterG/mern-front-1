@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const details = await axios.get("http://localhost:3000/api/v1/user/details", {
+        const details = await axios.get("https://mern-back-1-1.onrender.com/api/v1/user/details", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
           }
